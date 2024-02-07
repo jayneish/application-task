@@ -1,0 +1,251 @@
+/* General CSS */
+body{
+    background-color:#E6E9F4;
+    font-family: "Inter", sans-serif;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.content-container{
+    width:1000px;
+    height:auto;
+    background-color: #fff;
+    margin:40px auto;
+    padding:10px;
+    border-radius:10px;
+}
+
+/* Component Overview */
+.overview-container{
+    text-align:center;
+}
+
+.overview-text__body-text{
+    margin:20px 0;
+}
+
+.overview-text__body-text p{
+    margin:5px 0;
+}
+
+.button-container{
+    display:flex;
+    justify-content:center;
+}
+
+.overview-button{
+    background-color: transparent;
+    border:1px solid #000;
+    border-radius: 5px;
+    opacity:50%;
+    margin:0;
+}
+
+.overview-button.active{
+    border:1px solid #1E5EFF;
+    color:#1E5EFF;
+    opacity:100%;
+    padding:10px;
+}
+
+/* Price Plan Columns - Container */
+.price-plan-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top:30px;
+}
+
+.price-plan-container > div{
+    width:25%;
+    margin:2%;
+    padding:2%;
+    border:1px solid #E6E9F4;
+    border-radius:5px;
+}
+
+/* Price Plan Columns - Recommended Tag */
+.recommended-tag{
+    background-color:#1E5EFF;
+    color:#fff;
+    z-index:20;
+    margin:-13% auto 0 auto;
+    padding:2%;
+    width:50%;
+    text-align:center;
+    border-radius:5px;
+    display:none;
+}
+
+.recommended-tag p{
+    margin:0;
+}
+
+.recommended .recommended-tag{
+    display: block;
+}
+
+/* Price Plan Columns - Item Prices */
+.item-content__price{
+    flex-direction: row;
+    align-items:center;
+}
+
+.item-content__price p{
+    margin-top:10px;
+}
+
+.monthly-price{
+    display:flex;
+}
+
+.annual-price{
+    display:none;
+}
+
+.item__price-duration{
+    opacity:75%;
+}
+
+.item__price{
+    font-size:1.5em;
+    font-weight: 600;
+    margin-right:10px;
+    opacity:100%;
+}
+
+/* Price Plan Columns - Item Overview */
+.item-content__overview{
+    border-bottom:1px solid #E6E9F4;
+}
+
+.item-content__overview h3{
+    margin:0;
+}
+
+.item-content__overview p{
+    margin:10px 0 25px 0;
+    opacity:75%;
+}
+
+/* Price Plan Columns - Item Details */
+.item-content__details{
+    margin:40px 0;
+}
+
+.item-content__details li{
+    list-style: none;
+    margin:10px 0;
+}
+
+.item-content__details li:before{
+    height:15px;
+    width:15px;
+    content:"";
+    display:inline-block;
+    margin:auto 15px auto 0;
+}
+
+.item-content__details .not-selected{
+    background-image: url("../img/01-Add-roundednon.png");
+    opacity:75%;
+}
+
+.item-content__details .selected{
+    background-image: url("../img/01-Add-roundedtick-green.png");
+}
+
+.item-content__details .not-selected, .item-content__details .selected{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Price Plan Columns - Item Buttons */
+.plan-button{
+    width:100%;
+    padding:10px;
+    text-align:center;
+    background-color:transparent;
+    border:1px solid #E6E9F4;
+    border-radius:5px;
+    color:#1E5EFF;
+}
+
+.recommended .plan-button{
+    background-color:#1E5EFF;
+    color:#fff;
+}
+
+/* Price Plan Columns - Footnote */
+.pricing-footnote{
+    width:100%;
+    text-align:center;
+    opacity:75%;
+    margin-bottom:30px;
+}
+
+
+/* Frequently Asked Questions container CSS */
+.price-faqs{
+    margin:30px;
+  }
+
+/* Accordion button css */
+.accordion {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border:none;
+    border-top: 1px solid #E6E9F4;
+    outline: none;
+    transition: 0.4s;
+    position:relative;
+  }
+
+  .accordion:hover {
+    background-color: #E6E9F4;
+  }
+
+  /* Accordion content CSS */
+  .panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #F5F6FA;
+  }
+
+  /* Accordion text and image css */
+  .accordion p{
+    font-size:1.1em;
+    margin:0;
+  }
+
+  .accordion.active p{
+    font-weight:600;
+  }
+
+  .accordion p:after, .accordion.active p:after{
+    height:25px;
+    width:28px;
+    content:"";
+    display:inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    right:3%;
+    top:0;
+    bottom:0;
+    margin:auto;
+  }
+
+  .accordion p:after{
+    background-image: url("../img/01-Add-roundedchevron-down.png");
+  }
+
+  .accordion.active p:after{
+    background-image: url("../img/01-Add-roundedchevron-up.png");
+  }
